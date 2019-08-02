@@ -19,6 +19,4 @@
 !.gitlab-ci.yml
 !.npmignore
 !package.json
-!package-lock.json
 !README.md
-!yarn.lock

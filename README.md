@@ -1,29 +1,43 @@
+#nextjs-auth-hoc
+
+[![NPM version][npm-image]][npm-url]
+
+[npm-image]: http://img.shields.io/npm/v/nextjs-auth-hoc.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/nextjs-auth-hoc
+
 A Higher Order Component for restricting page access.
 
 ## Installation
+[![nextjs-auth-hoc](https://nodei.co/npm/nextjs-auth-hoc.png)](https://npmjs.org/package/nextjs-auth-hoc)
 
     // with npm
-    npm install @material-ui/core
+    npm install nextjs-auth-hoc
     
     // with yarn
-    yarn add @material-ui/core
+    yarn add nextjs-auth-hoc
 
 ## Configuration
-Before using you have to specify some variables in .env of your project
+Before using you have to specify some variables in .env of your project:
     
     # Default page to redirect users if user is not authenticated
     REDIRECT_IF_NOT_AUTHENTICATED=/auth/signin
+    
     # Default page to redirect if user is authenticated
     REDIRECT_IF_AUTHENTICATED=/dashboard
+    
     # Default page to redirect if action is not authorized
     REDIRECT_IF_NO_ACCESS=/dashboard
+    
     # Name of cookie key for JWT token storage
     JWT_COOKIE_NAME=jwt
+    
     # Host of site, only need if your authentication happens on other domain
     # It needed to pass "ref" query
     REFERER=http://example.com
+    
     # Base URL of root endpoint
     API_HOST=http://api.example.com/v1
+    
     # URL to get user session
     # if not specified default will be "/auth/session"
     GET_SESSION_URL=/user/profile
@@ -78,15 +92,17 @@ You can restrict accessing page by passing ACL option, **it's all you need**:
         }
     }
     export default Auth({ action: 'RINA', ACL: ['admin'] })(Dashboard)
-## API
-Params
 
-action - type: 'String' ----- **optional**
+## API  
 
-|          |  description  |
-|----------|---------------|
-|   RINA   | "RINA" - Redirect if not authenticated
-|   RIA    | "RIA" - redirect if authenticated
-
-ACL - type: 'Array' ------ **optional**
+### action (**optional**)
+ type: **"string"**
+ 
+|   value  |  description  |  
+|----------|---------------|  
+|   RINA   | Redirect if not authenticated  
+|   RIA    | Redirect if authenticated  
+  
+### ACL (**optional**)
+type: **"array"**
 
