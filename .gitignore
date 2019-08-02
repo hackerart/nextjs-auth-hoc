@@ -1,0 +1,24 @@
+# Ignore all files in root dir
+/*
+
+# Excepts source files
+!/src/
+!/__mocks__/
+!/__tests__/
+
+# Excepts documentation
+!/doc/
+
+# Excepts config files
+!.babelrc
+!.eslintignore
+!.eslintrc
+!jest.config.js
+!jest.setup.js
+!.gitignore
+!.gitlab-ci.yml
+!.npmignore
+!package.json
+!package-lock.json
+!README.md
+!yarn.lock

@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends" : [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb-base"
+  ],
+  "rules" : {
+    "camelcase": "off",
+    "no-return-assign": ["error", "except-parens"],
+    "implicit-arrow-linebreak": "off",
+    "no-use-before-define": "off",
+    "consistent-return": "off",
+    "semi": ["error", "never"],
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "no-underscore-dangle": "off",
+    "curly": ["error", "multi", "consistent"],
+    "nonblock-statement-body-position": ["error", "any"],
+    "one-var": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "no-class-assign": "off",
+    "comma-dangle": ["error", "never"],
+    "padded-blocks": ["error", "never"],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/display-name": "off"
+  }
+}
+
