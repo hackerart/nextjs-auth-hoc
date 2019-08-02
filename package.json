@@ -1,6 +1,6 @@
 {
   "name": "nextjs-auth-hoc",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Higher Order Component for restricting page access.",
   "homepage": "https://github.com/hackerart/nextjs-auth-hoc#readme",
   "repository": {

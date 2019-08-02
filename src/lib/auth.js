@@ -18,7 +18,7 @@ export const redirectIfNotAuthenticated = async (ctx, { user, ACL, pathname }) =
     // if not logged in
     if (!user) {
         const url = process.env.REDIRECT_IF_NOT_AUTHENTICATED + (
-            process.env.REDIRECT_IF_NOT_AUTHENTICATED.startsWith('http')
+            process.env.REDIRECT_IF_NOT_AUTHENTICATED && process.env.REDIRECT_IF_NOT_AUTHENTICATED.startsWith('http')
                 ? `?ref=${process.env.REFERER}${pathname || ''}`
                 : ''
         )
