@@ -1,4 +1,4 @@
-#nextjs-auth-hoc
+# nextjs-auth-hoc
 
 [![NPM version][npm-image]][npm-url]
 
