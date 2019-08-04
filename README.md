@@ -1,9 +1,12 @@
 # nextjs-auth-hoc
 
 [![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
 
 [npm-image]: http://img.shields.io/npm/v/nextjs-auth-hoc.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/nextjs-auth-hoc
+[download-image]: https://img.shields.io/npm/dm/nextjs-auth-hoc.svg?style=flat-square
+[download-url]: https://npmjs.org/package/nextjs-auth-hoc
 
 A Higher Order Component for restricting page access.
 
